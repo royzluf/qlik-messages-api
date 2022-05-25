@@ -253,10 +253,10 @@ This action allows create a new message. If the request is successful, a new mes
 
 In order to run the end to end testing use the following command:
 
-            npm run test:e2e
+     npm run test:e2e
 
 ### Unit Tests
 
 In order to run the unit testing use the following command:
 
-            npm run test:unit
+    npm run test:unit
