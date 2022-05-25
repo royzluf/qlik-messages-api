@@ -255,6 +255,8 @@ In order to run the end to end testing use the following command:
 
      npm run test:e2e
 
+Note: For testing purposes, All the messages in the Database will be deleted before each test, and after all the tests.
+
 ### Unit Tests
 
 In order to run the unit testing use the following command:
