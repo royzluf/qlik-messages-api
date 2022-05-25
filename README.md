@@ -251,7 +251,7 @@ This action allows create a new message. If the request is successful, a new mes
 
 ### E2E Tests
 
-In order to run the end to end testing use the following command:
+In order to run the end to end testing use the following command (while the service is running):
 
      npm run test:e2e
 
@@ -262,3 +262,25 @@ Note: For testing purposes, All the messages in the Database will be deleted bef
 In order to run the unit testing use the following command:
 
     npm run test:unit
+
+## Command-line interface
+
+#### Get all Message [GET]
+
+    node .\commanderCli\commander.js get-all
+
+#### Get a Message [GET]
+
+    node .\commanderCli\commander.js get <messageID>
+
+#### Create a Message [GET]
+
+    node .\commanderCli\commander.js create <text>
+
+#### Update a Message [GET]
+
+    node .\commanderCli\commander.js update <messageID> <text>
+
+#### Delete a Message [GET]
+
+    node .\commanderCli\commander.js delete <messageID>
