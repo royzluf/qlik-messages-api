@@ -2,9 +2,9 @@
 
 ## Table of Contents
 
--   [Introduction](##Introduction)
--   [Prerequisites](##Prerequisites)
--   [Usage](## Usage)
+-   [Introduction](#Introduction)
+-   [Prerequisites](#Prerequisites)
+-   [Usage](#Usage)
 
 ## Introduction
 
