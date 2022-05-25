@@ -12,8 +12,10 @@
     "author": "Roy Zluf",
     "license": "ISC",
     "dependencies": {
+        "commander": "^9.2.0",
         "dotenv": "^16.0.1",
         "express": "^4.18.1",
+        "inquirer": "^8.2.4",
         "mongoose": "^6.3.3",
         "morgan": "^1.10.0",
         "nodemon": "^2.0.16"
