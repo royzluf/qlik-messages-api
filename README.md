@@ -296,6 +296,6 @@ In order to run the unit testing use the following command:
 
     node .\commanderCli\commander.js delete <messageID>
 
-### Help - In order to view all possible commands
+#### Help - In order to view all possible commands
 
     node ./commanderCli/commander.js --help
