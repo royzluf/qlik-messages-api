@@ -41,7 +41,6 @@ The scheme below describes the application's file structure along with a table d
         Qlik Cloud Audition Project - Messages API
         |-- config
             |-- config.env
-            |-- configDB.json
         |-- service
             |-- models
                 |-- message.js
