@@ -1,0 +1,21 @@
+# Use root/example as user/password credentials
+version: '3.1'
+
+services:
+
+  mongo:
+    image: mongo:4.2
+    restart: always
+    ports:
+      - 27017:27017
+    volumes:
+      - mongo:/data/db
+    environment:
+      SERVICE_27017_NAME: mongodb
+      SERVICE_27017_CHECK_TCP: 'True'
+      SERVICE_27017_CHECK_INTERVAL: 15s
+    command: mongod
+
+
+volumes:
+  mongo:
