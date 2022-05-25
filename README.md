@@ -38,7 +38,7 @@ The appllication currently based on Express Framework, MongoDB and support the f
 
 The scheme below describes the application's file structure along with a table describing it's main components.
 
-        Qlik Cloud Audition Project - Messages API
+        qlik-messages
         |-- config
             |-- config.env
         |-- service
@@ -51,6 +51,9 @@ The scheme below describes the application's file structure along with a table d
             |-- message.js
         |-- helpers
             |-- helpers.js
+            |-- helpers.unit.spec.js
+        |-- e2e
+            |-- rest.e2e.spec.js
         |-- app.js
         |-- server.js
 
