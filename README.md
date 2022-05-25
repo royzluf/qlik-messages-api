@@ -5,6 +5,11 @@
 -   [Introduction](#Introduction)
 -   [Prerequisites](#Prerequisites)
 -   [Usage](#Usage)
+-   [High-level Architecture](#High-level-Architecture)
+-   [Architecture Diagram](#Architecture-Diagram)
+-   [REST API Endpoints](#REST-API-Endpoints)
+-   [Tests](#Tests)
+-   [Command-line interface](#Command-line-interface)
 
 ## Introduction
 
@@ -290,3 +295,7 @@ In order to run the unit testing use the following command:
 #### Delete a Message [GET]
 
     node .\commanderCli\commander.js delete <messageID>
+
+### Help - In order to view all possible commands
+
+    node ./commanderCli/commander.js --help
