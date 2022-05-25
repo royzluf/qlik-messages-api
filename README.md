@@ -1,5 +1,11 @@
 # Qlik Messages API
 
+## Table of Contents
+
+-   [Introduction](##Introduction)
+-   [Prerequisites](##Prerequisites)
+-   [Usage](## Usage)
+
 ## Introduction
 
 This document is meant to give an overview about the Qlik Messages API application.
