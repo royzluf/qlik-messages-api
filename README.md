@@ -54,15 +54,16 @@ The scheme below describes the application's file structure along with a table d
         |-- app.js
         |-- server.js
 
-| Name                | Description                                                                          |
-| :------------------ | ------------------------------------------------------------------------------------ |
-| /config/config.env  | config file for environment variables. e.g: port number, MONGO_URI.                  |
-| /service/           | REST API Service and Database models.                                                |
-| /controllers/       | Controllers.                                                                         |
-| /routes/            | REST API routers.                                                                    |
-| /helpers/helpers.js | helpers functions. e.g: Define if a message is a Palindrom.                          |
-| /app.js             | The Express application which define and activate the routers.                       |
-| /server.js          | Entry point that starts up the application and set the server to listen to requests. |
+| Name               | Description                                                                          |
+| :----------------- | ------------------------------------------------------------------------------------ |
+| /config/config.env | config file for environment variables. e.g: port number, MONGO_URI.                  |
+| /service/          | REST API Service and Database models.                                                |
+| /controllers/      | Controllers.                                                                         |
+| /routes/           | REST API routers.                                                                    |
+| /helpers/          | helpers functions and their unit tests. e.g: Define if a message is a Palindrom.     |
+| /e2e/              | E2E Testing.                                                                         |
+| /app.js            | The Express application which define and activate the routers.                       |
+| /server.js         | Entry point that starts up the application and set the server to listen to requests. |
 
 ## Architecture Diagram
 
