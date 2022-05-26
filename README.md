@@ -65,6 +65,9 @@ The scheme below describes the application's file structure along with a table d
             |-- helpers.unit.spec.js
         |-- e2e
             |-- rest.e2e.spec.js
+        |-- commanderCli
+            |-- commander.js
+            |-- commands.js
         |-- app.js
         |-- server.js
 
@@ -76,6 +79,7 @@ The scheme below describes the application's file structure along with a table d
 | /routes/           | REST API routers.                                                                    |
 | /helpers/          | helpers functions and their unit tests. e.g: Define if a message is a Palindrom.     |
 | /e2e/              | E2E Testing.                                                                         |
+| /commanderCli/     | Command-line interface.                                                              |
 | /app.js            | The Express application which define and activate the routers.                       |
 | /server.js         | Entry point that starts up the application and set the server to listen to requests. |
 
