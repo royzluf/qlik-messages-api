@@ -8,7 +8,7 @@ mongoose.connect(process.env.MONGO_URI).then(
         console.log('DB connected successfully!');
     },
     (err) => {
-        console.log(`Failed to connect to database with error: ${err.toString()} .Exiting`);
+        console.log(`Failed to connect to database with error: ${err.toString()}. Exiting...`);
         process.exit(1);
     }
 );
@@ -82,6 +82,7 @@ exports.updateMessageById = async (id, messageBody) => {
             new: true,
             runValidators: true,
         });
+
         if (!updatedMessage) {
             throw new Error("Couldn't update the message");
         }
