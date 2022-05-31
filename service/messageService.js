@@ -52,9 +52,7 @@ exports.updateMessageById = async (id, messageBody) => {
         if (!ObjectId.isValid(id)) {
             throw new Error('Message not found');
         }
-        if (messageBody.text == null) {
-            throw new Error('Text not delivered');
-        }
+
         const message = await Message.findOne({
             _id: id,
             status: { $ne: 'Deleted' },

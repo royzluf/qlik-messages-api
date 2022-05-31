@@ -28,7 +28,6 @@ exports.createMessage = async (req, res, next) => {
     try {
         const messageBody = { ...req.body };
         const newMessage = await service.createMessage(messageBody);
-        console.log(newMessage);
         responseFactory(res, 201, 'success', { requestedAt: req.requestTime, data: { message: newMessage } });
     } catch (error) {
         next(new AppError(error.message, 400));
