@@ -20,7 +20,7 @@ app.use(express.json());
 
 app.use('/messages/', messageRouter);
 
-app.all('*', (req, res, next) => {
+app.all('*', (req, _, next) => {
     const appError = new AppError(`Can't find ${req.originalUrl} on this server`, 404);
     next(appError);
 });
