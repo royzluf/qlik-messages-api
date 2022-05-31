@@ -8,7 +8,7 @@ mongoose.connect(process.env.MONGO_URI).then(
         console.log('DB connected successfully!');
     },
     (err) => {
-        console.log(`Failed to connect to database with error: ${err.toString()} .Exiting`);
+        console.log(`Failed to connect to database with error: ${err.toString()}. Exiting...`);
         process.exit(1);
     }
 );
@@ -52,7 +52,9 @@ exports.updateMessageById = async (id, messageBody) => {
         if (!ObjectId.isValid(id)) {
             throw new Error('Message not found');
         }
-
+        if (messageBody.text == null) {
+            throw new Error('Text not delivered');
+        }
         const message = await Message.findOne({
             _id: id,
             status: { $ne: 'Deleted' },
@@ -82,6 +84,7 @@ exports.updateMessageById = async (id, messageBody) => {
             new: true,
             runValidators: true,
         });
+
         if (!updatedMessage) {
             throw new Error("Couldn't update the message");
         }
