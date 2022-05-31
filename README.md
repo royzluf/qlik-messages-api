@@ -63,6 +63,8 @@ The scheme below describes the application's file structure along with a table d
         |-- helpers
             |-- helpers.js
             |-- helpers.unit.spec.js
+        |-- utils
+            |-- appError.js
         |-- e2e
             |-- rest.e2e.spec.js
         |-- commanderCli
@@ -77,7 +79,7 @@ The scheme below describes the application's file structure along with a table d
 | /service/          | REST API Service and Database models.                                                |
 | /controllers/      | Controllers.                                                                         |
 | /routes/           | REST API routers.                                                                    |
-| utils              | Application utilities, e.g: AppError class.                                          |
+| /utils/            | Application utilities, e.g: AppError class.                                          |
 | /helpers/          | helpers functions and their unit tests. e.g: Define if a message is a Palindrom.     |
 | /e2e/              | E2E Testing.                                                                         |
 | /commanderCli/     | Command-line interface.                                                              |
