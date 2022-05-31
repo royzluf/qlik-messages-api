@@ -202,6 +202,11 @@ If found in the database, it returns a response with 204 status code (empty body
 
 This action retrieves all the messages in the Database (That were not deleted). it returns a response with 200 status code, along with request date, number of results and the representation of the messages, Otherwise a 404 is returned.
 
+The operation supports pagination, by adding the page and limit fields to the query.
+the page field is responsible for the page to be displayed, and the limit field determines the number of documents to be include in each page. The defaults values are: page = 1, limit = 100
+
+example: /messages?page=3&limit=10.
+
 -   Response 200 (application/json)
 
     -   Body

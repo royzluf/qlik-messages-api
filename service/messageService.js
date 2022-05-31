@@ -13,8 +13,13 @@ mongoose.connect(process.env.MONGO_URI).then(
     }
 );
 
-exports.getAllMessages = async () => {
-    const messages = await Message.find({ status: { $ne: 'Deleted' } });
+exports.getAllMessages = async (query) => {
+    const page = +query.page || 1;
+    const limit = +query.limit || 100;
+    const skip = limit * (page - 1);
+    const messages = await Message.find({ status: { $ne: 'Deleted' } })
+        .skip(skip)
+        .limit(limit);
 
     return messages;
 };
