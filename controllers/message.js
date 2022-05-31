@@ -6,7 +6,7 @@ const responseFactory = (res, statusCode, statusMessage, params) => {
 
 exports.getAllMessages = async (req, res) => {
     try {
-        const messages = await service.getAllMessages();
+        const messages = await service.getAllMessages(req.query);
         responseFactory(res, 200, 'Success', { requestedAt: req.requestTime, results: messages.length, data: { messages } });
     } catch (error) {
         responseFactory(res, 404, 'fail', { message: error.message });
