@@ -67,7 +67,7 @@ exports.updateMessageById = async (id, messageBody) => {
             throw new Error('Message not found');
         }
 
-        if (messageBody.text != message.text) {
+        if (messageBody.text != message.text && messageBody.text) {
             messageBody.status = 'Updated';
             messageBody.isPalindrom = isPalindrom(messageBody.text);
             message.messageHistory.push({
