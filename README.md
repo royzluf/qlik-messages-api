@@ -10,6 +10,7 @@
 -   [REST API Endpoints](#REST-API-Endpoints)
 -   [Tests](#Tests)
 -   [Command-line interface](#Command-line-interface)
+-   [Live Version](#Live-Version)
 
 ## Introduction
 
