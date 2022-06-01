@@ -311,7 +311,7 @@ In order to run the unit testing use the following command:
 
 #### Help - In order to view all possible commands
 
-    node ./commanderCli/commander.js --help
+    node .\commanderCli\commander.js --help
 
 ## Live Version
 
