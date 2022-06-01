@@ -311,3 +311,9 @@ In order to run the unit testing use the following command:
 #### Help - In order to view all possible commands
 
     node ./commanderCli/commander.js --help
+
+## Live Version
+
+The application is also available in a cloud live version:
+
+https://qlik-messages-api.herokuapp.com
