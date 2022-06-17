@@ -1,5 +1,5 @@
-exports.isPalindrom = (message = '') => {
-    message = message.trim();
-    const reverseMessage = message.split('').reverse().join('');
-    return message === reverseMessage || false;
+exports.isPalindrom = (messagee = '') => {
+    messagee = messagee.trim();
+    const reverseMessage = messagee.split('').reverse().join('');
+    return messagee === reverseMessage || false;
 };
