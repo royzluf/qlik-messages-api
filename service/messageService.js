@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 var ObjectId = require('mongoose').Types.ObjectId;
 const Message = require('./models/message');
-const { isPalindrom } = require('../helpers/helpers');
+const { isPalindrom, isPalindromAsync } = require('../helpers/helpers');
 
 mongoose.connect(process.env.MONGO_URI).then(
     () => {
@@ -39,6 +39,7 @@ exports.getMessageById = async (id) => {
 exports.createMessage = async (messageBody) => {
     try {
         messageBody.isPalindrom = isPalindrom(messageBody.text);
+        isPalindromAsync(messageBody.text, (isPalindrom) => console.log(isPalindrom));
         const newMessage = await Message.create(messageBody);
 
         return newMessage;
