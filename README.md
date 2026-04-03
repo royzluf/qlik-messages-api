@@ -49,7 +49,7 @@ The appllication currently based on Express Framework, MongoDB and support the f
 ## High-level Architecture
 
 The scheme below describes the application's file structure along with a table describing it's main components.
-        BLA
+
         qlik-messages
         |-- config
             |-- config.env
